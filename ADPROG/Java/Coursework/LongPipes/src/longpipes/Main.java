@@ -33,7 +33,6 @@ public class Main {
         
         ArrayList<Pipe> pipes= new ArrayList<Pipe>();
         
-        Pipe p = new Pipe();
         //Deciding pipe type
         
         if(colour==0&& grade>=1 && grade <=3&& insul.equals("N")&& outerInforce.equals("N")){
@@ -43,19 +42,19 @@ public class Main {
         }
         if(colour ==1 && grade >=2 && grade <=4 && insul.equals("N")&& outerInforce.equals("N")){
         //Pipe2
-        p = new Pipe2(length, diameter, grade, chemRes, quantity);
+        pipes.add(new Pipe1(length, diameter, grade, chemRes, quantity));
         }
         if(colour ==2 && grade >=2 && grade <=5 && insul.equals("N")&& outerInforce.equals("N")){
         //Pipe3
-        p = new Pipe3(length, diameter, grade, chemRes, quantity);
+        pipes.add(new Pipe1(length, diameter, grade, chemRes, quantity));
         }
         if(colour ==2 && grade >=2 && grade <=5 && insul.equals("Y")&& outerInforce.equals("N")){
         //Pipe4
-        p = new Pipe4(length, diameter, grade, chemRes, quantity);
+        pipes.add(new Pipe1(length, diameter, grade, chemRes, quantity));
         }
         if(colour ==2 && grade >=3 && grade <=5 && insul.equals("Y")&& outerInforce.equals("Y")){
         //Pipe5
-        p = new Pipe5(length, diameter, grade, chemRes, quantity);
+        pipes.add(new Pipe1(length, diameter, grade, chemRes, quantity));
         }
         else{
             System.out.println("Invalid Pipe Type");
