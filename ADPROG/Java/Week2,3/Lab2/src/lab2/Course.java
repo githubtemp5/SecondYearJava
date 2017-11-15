@@ -88,7 +88,7 @@ public class Course {
     }
     
     public int getNoOfStudents(){        
-        return Students.size();
+        return noOfStudents;
     }
     
     public String getCourseName()
