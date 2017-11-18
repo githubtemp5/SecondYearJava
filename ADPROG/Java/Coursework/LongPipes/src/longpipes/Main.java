@@ -1,5 +1,11 @@
 package longpipes;
 
+import pipes.Pipe;
+import pipes.Pipe5;
+import pipes.Pipe4;
+import pipes.Pipe3;
+import pipes.Pipe2;
+import pipes.Pipe1;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -69,4 +75,3 @@ public class Main {
 
     
 }
-
